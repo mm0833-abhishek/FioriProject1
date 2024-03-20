@@ -1,0 +1,21 @@
+<mvc:View controllerName="uiproject1.controller.View1"
+    xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">/
+
+    <List headerText="Custom Content"  items="{path: 'locModel>/items/item/0/batters/batter'}" >
+		<CustomListItem>
+			<HBox>
+				<core:Icon size="2rem"  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
+				<VBox >
+					<Text text="{locModel>type}" />
+					<Text text="{locModel>/items/item/0/topping/0/id}" />
+					<Label text="{locModel>id}"/>
+				</VBox>
+			</HBox>
+		</CustomListItem>
+	</List>
+	<Button text="Experiment" press="onExperiment"/>
+
+
+</mvc:View>

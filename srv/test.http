@@ -1,0 +1,7 @@
+POST http://localhost:4004/odata/v4/catalog/applyDiscount
+Content-Type: application/json
+
+{
+ "age":45
+}
+###
